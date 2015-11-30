@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmh-fa-Nbg">
+                                <rect key="frame" x="260" y="83" width="81" height="30"/>
+                                <state key="normal" title="UIAlertView"/>
+                                <connections>
+                                    <action selector="AAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ve-d6-i2O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QV-W7-qsp">
+                                <rect key="frame" x="214" y="150" width="173" height="30"/>
+                                <state key="normal" title="带UITextField的AlertView"/>
+                                <connections>
+                                    <action selector="BAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGY-nl-QOJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arn-nl-FBd">
+                                <rect key="frame" x="214" y="214" width="173" height="30"/>
+                                <state key="normal" title="带UITextView的AlertView"/>
+                                <connections>
+                                    <action selector="CAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gdg-1d-GLN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GP1-bw-GvO">
+                                <rect key="frame" x="251" y="277" width="99" height="30"/>
+                                <state key="normal" title="UIActionSheet"/>
+                                <connections>
+                                    <action selector="DAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wWn-wK-Rhd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="arn-nl-FBd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="33R-nP-b5V"/>
+                            <constraint firstItem="GP1-bw-GvO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E1u-Ej-531"/>
+                            <constraint firstItem="5QV-W7-qsp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IrM-9a-T5s"/>
+                            <constraint firstItem="GP1-bw-GvO" firstAttribute="top" secondItem="arn-nl-FBd" secondAttribute="bottom" constant="33" id="YVJ-Kk-4Ba"/>
+                            <constraint firstItem="vmh-fa-Nbg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="asK-rX-MC1"/>
+                            <constraint firstItem="5QV-W7-qsp" firstAttribute="top" secondItem="vmh-fa-Nbg" secondAttribute="bottom" constant="37" id="fyg-u3-fQA"/>
+                            <constraint firstItem="vmh-fa-Nbg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sgs-HS-N5C"/>
+                            <constraint firstItem="arn-nl-FBd" firstAttribute="top" secondItem="5QV-W7-qsp" secondAttribute="bottom" constant="34" id="wlN-nk-9vX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
