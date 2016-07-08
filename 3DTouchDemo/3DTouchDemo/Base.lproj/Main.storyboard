@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R3o-7E-zlb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yfN-bJ-Gt4">
+            <objects>
+                <navigationController id="R3o-7E-zlb" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9SE-ig-zzT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hLQ-nD-emD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9s3-FS-wGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2454.5" y="153.5"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LWH-ez-qSj"/>
+                        <viewControllerLayoutGuide type="bottom" id="XGN-6I-R9y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ufS-y4-WYy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxT-qQ-YIh">
+                                <rect key="frame" x="168" y="324" width="38" height="30"/>
+                                <state key="normal" title="分享"/>
+                                <connections>
+                                    <action selector="share:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PTI-eb-XZd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGD-W2-ZQS">
+                                <rect key="frame" x="168" y="368" width="38" height="30"/>
+                                <state key="normal" title="喜欢"/>
+                                <connections>
+                                    <action selector="like:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wHE-6e-dqf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VGD-W2-ZQS" firstAttribute="top" secondItem="gxT-qQ-YIh" secondAttribute="bottom" constant="14" id="3J2-ey-eb8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VGD-W2-ZQS" secondAttribute="trailing" constant="153" id="BrV-lT-TAG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gxT-qQ-YIh" secondAttribute="trailing" constant="153" id="InH-F8-aHa"/>
+                            <constraint firstItem="gxT-qQ-YIh" firstAttribute="leading" secondItem="ufS-y4-WYy" secondAttribute="leadingMargin" constant="152" id="hMJ-jL-gpY"/>
+                            <constraint firstItem="VGD-W2-ZQS" firstAttribute="leading" secondItem="ufS-y4-WYy" secondAttribute="leadingMargin" constant="152" id="oUy-7W-BK4"/>
+                            <constraint firstItem="XGN-6I-R9y" firstAttribute="top" secondItem="VGD-W2-ZQS" secondAttribute="bottom" constant="269" id="rbz-XG-yN8"/>
+                            <constraint firstItem="gxT-qQ-YIh" firstAttribute="top" secondItem="LWH-ez-qSj" secondAttribute="bottom" constant="260" id="ysn-AX-pj5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="zic-Cu-Jiz"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2043.5" y="153.5"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  3DTouchDemo
+//
+//  Created by 王颜华 on 16/4/15.
+//  Copyright © 2016年 EmyWong. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
+
+#endif /* PrefixHeader_pch */
