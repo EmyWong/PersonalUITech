@@ -1,0 +1,2 @@
+platform :ios,'7.0'
+pod 'JPush','~>2.1.0'
