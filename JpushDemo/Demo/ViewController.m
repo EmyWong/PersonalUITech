@@ -18,10 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.webView.scalesPageToFit = YES;//自动对页面进行缩放以适应屏幕
-    self.webView.delegate = self;
   
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openWeb) name:@"openWeb" object:nil];
 
+    self.webView.delegate = self;
     self.activityIndicatorView=[[UIActivityIndicatorView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
     self.activityIndicatorView.center=self.view.center;
     [self.activityIndicatorView setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
