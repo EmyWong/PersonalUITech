@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addTextView];
+    [self addBarChartView];
 }
 //绘制富文本
 - (void)addTextView
