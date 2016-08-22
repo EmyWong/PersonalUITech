@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SpeedDialView : UIView
-//用来盛放选中的btn
+//用来盛放选中的button
 @property (nonatomic,retain) NSMutableArray *btns;
 //输入的密码
 @property (nonatomic,strong) NSMutableString *code;

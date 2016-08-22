@@ -327,6 +327,7 @@
 				95F98DAC1D6456D7008D2173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -40,17 +41,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6MC-H3-2Ge" customClass="SpeedDialView">
+                                <rect key="frame" x="150" y="243" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="OMG-J4-z8I"/>
+                                    <constraint firstAttribute="width" secondItem="6MC-H3-2Ge" secondAttribute="height" multiplier="1:1" id="R59-py-hkW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pUs-W3-OpL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="BJw-kR-B3s"/>
+                            <constraint firstItem="6MC-H3-2Ge" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ikd-Ff-G7P"/>
                             <constraint firstItem="8OM-3O-Mbo" firstAttribute="top" secondItem="pUs-W3-OpL" secondAttribute="bottom" constant="16" id="OmN-uI-zjF"/>
                             <constraint firstItem="pUs-W3-OpL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QvZ-Qg-lqu"/>
+                            <constraint firstItem="6MC-H3-2Ge" firstAttribute="top" secondItem="8OM-3O-Mbo" secondAttribute="bottom" constant="36" id="b7x-oQ-sjN"/>
                             <constraint firstItem="8OM-3O-Mbo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hv1-Qn-XmQ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="8OM-3O-Mbo" id="9Sd-ic-PhL"/>
+                        <outlet property="speedDialView" destination="6MC-H3-2Ge" id="w7c-0r-ori"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

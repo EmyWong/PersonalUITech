@@ -10,6 +10,7 @@
 #import "SpeedDialView.h"
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet SpeedDialView *speedDialView;
 
 @end
 
@@ -23,10 +24,8 @@
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeLabel) name:@"changeLabel" object:nil];
      [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeLabel2) name:@"changeLabel2" object:nil];
-    SpeedDialView *view = [[SpeedDialView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height - self.view.frame.size.width, self.view.frame.size.width, self.view.frame.size.width)];
-    view.password = @"1345";
-    view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:view];
+   
+    self.speedDialView.password = @"1345";
  
     
 }
