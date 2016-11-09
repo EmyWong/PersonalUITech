@@ -1,0 +1,17 @@
+//
+//  AppDelegate.h
+//  SSZipArchive
+//
+//  Created by Dareway on 16/11/8.
+//  Copyright © 2016年 Dareway. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+
+@end
+
