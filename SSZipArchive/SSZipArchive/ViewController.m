@@ -27,7 +27,7 @@
     NSURLSession *session =[NSURLSession sharedSession];
 
     //2.确定请求路径
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://10.1.83.78:8080/bemms/maps/37100.zip"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://10.1.83.78:8080/bemms/maps/3710.zip"]];
     request.HTTPMethod = @"POST";
                                     
     //3.创建task

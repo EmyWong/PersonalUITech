@@ -1,0 +1,12 @@
+use_frameworks!
+platform :ios, '7.0'
+pod 'Firebase/AdMob'
+
+target 'AdMobExample' do
+end
+target 'AdMobExampleSwift' do
+end
+target 'AdMobExampleTests' do
+end
+target 'AdMobExampleSwiftTests' do
+end
