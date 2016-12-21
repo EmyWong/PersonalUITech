@@ -18,8 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //从钥匙串读取UUID
-    NSString *retrieveuuid = [SSKeychain passwordForService:@"com.yourapp.yourcompany"account:@"user"];
-    if (!retrieveuuid) {
+    NSError *error = nil;
+    NSString *retrieveuuid = [SSKeychain passwordForService:@"com.yourapp.yourcompany" account:@"user"error:&error];
+    if (!error) {
+        NSLog(@"%@",retrieveuuid);
+    } else if ([error code] == SSKeychainErrorNotFound){
         //创建一个UUID
         CFUUIDRef uuid = CFUUIDCreate(NULL);
         assert(uuid != NULL);
@@ -27,9 +30,10 @@
         //存储到钥匙串中
         [SSKeychain setPassword: [NSString stringWithFormat:@"%@", uuidStr]
                      forService:@"com.yourapp.yourcompany"account:@"user"];
-    }else {
-        NSLog(@"%@",retrieveuuid);
+    } else {
+        NSLog(@"%ld",(long)[error code]);
     }
+    
 }
 
 

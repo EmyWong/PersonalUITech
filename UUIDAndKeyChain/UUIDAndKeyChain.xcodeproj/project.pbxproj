@@ -291,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F5XBCM7QUZ;
 				INFOPLIST_FILE = UUIDAndKeyChain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dareway.UUIDAndKeyChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,6 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F5XBCM7QUZ;
 				INFOPLIST_FILE = UUIDAndKeyChain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dareway.UUIDAndKeyChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -328,6 +330,7 @@
 				22581D511E0A1BA0002CC43A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
