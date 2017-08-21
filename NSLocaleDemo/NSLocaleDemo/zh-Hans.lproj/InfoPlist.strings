@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  NSLocaleDemo
+
+  Created by zhenghaoMAC on 2017/8/21.
+  Copyright © 2017年 SomeOne. All rights reserved.
+*/
+"CFBundleDisplayName" = "国际化测试";

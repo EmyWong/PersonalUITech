@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLO-cA-P3O">
+                                <rect key="frame" x="167" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y8r-F7-UBc">
+                                <rect key="frame" x="67" y="176" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="RGN-xe-5VJ"/>
+                                    <constraint firstAttribute="width" constant="240" id="YGv-pe-YpB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70196078431372544" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y8r-F7-UBc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4XB-3i-djh"/>
+                            <constraint firstItem="OLO-cA-P3O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BPl-Tm-EaF"/>
+                            <constraint firstItem="OLO-cA-P3O" firstAttribute="top" secondItem="Y8r-F7-UBc" secondAttribute="bottom" constant="19" id="GgJ-Um-gjU"/>
+                            <constraint firstItem="OLO-cA-P3O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yry-l1-qLw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="Y8r-F7-UBc" id="I3x-n3-hst"/>
+                        <outlet property="label" destination="OLO-cA-P3O" id="6Fs-EY-ep8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="102.99850074962519"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img.png" width="300" height="200"/>
+    </resources>
+</document>

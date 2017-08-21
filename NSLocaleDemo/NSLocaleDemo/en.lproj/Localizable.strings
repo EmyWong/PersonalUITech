@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  NSLocaleDemo
+
+  Created by zhenghaoMAC on 2017/8/21.
+  Copyright © 2017年 SomeOne. All rights reserved.
+*/
+"locale" = "中文";
