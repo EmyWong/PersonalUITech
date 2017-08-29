@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75AA61371F54F2200017929E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AA61361F54F2200017929E /* main.m */; };
+		75AA613A1F54F2200017929E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AA61391F54F2200017929E /* AppDelegate.m */; };
+		75AA613D1F54F2200017929E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AA613C1F54F2200017929E /* ViewController.m */; };
+		75AA61401F54F2200017929E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AA613E1F54F2200017929E /* Main.storyboard */; };
+		75AA61421F54F2200017929E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75AA61411F54F2200017929E /* Assets.xcassets */; };
+		75AA61451F54F2200017929E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AA61431F54F2200017929E /* LaunchScreen.storyboard */; };
+		75AA61501F54F2210017929E /* CMPedometerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AA614F1F54F2210017929E /* CMPedometerDemoTests.m */; };
+		75AA615B1F54F2210017929E /* CMPedometerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AA615A1F54F2210017929E /* CMPedometerDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75AA614C1F54F2210017929E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75AA612A1F54F2200017929E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75AA61311F54F2200017929E;
+			remoteInfo = CMPedometerDemo;
+		};
+		75AA61571F54F2210017929E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75AA612A1F54F2200017929E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75AA61311F54F2200017929E;
+			remoteInfo = CMPedometerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75AA61321F54F2200017929E /* CMPedometerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMPedometerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AA61361F54F2200017929E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75AA61381F54F2200017929E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		75AA61391F54F2200017929E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		75AA613B1F54F2200017929E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		75AA613C1F54F2200017929E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		75AA613F1F54F2200017929E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75AA61411F54F2200017929E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75AA61441F54F2200017929E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75AA61461F54F2200017929E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75AA614B1F54F2210017929E /* CMPedometerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMPedometerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AA614F1F54F2210017929E /* CMPedometerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMPedometerDemoTests.m; sourceTree = "<group>"; };
+		75AA61511F54F2210017929E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75AA61561F54F2210017929E /* CMPedometerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMPedometerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AA615A1F54F2210017929E /* CMPedometerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMPedometerDemoUITests.m; sourceTree = "<group>"; };
+		75AA615C1F54F2210017929E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75AA612F1F54F2200017929E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75AA61481F54F2210017929E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75AA61531F54F2210017929E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75AA61291F54F2200017929E = {
+			isa = PBXGroup;
+			children = (
+				75AA61341F54F2200017929E /* CMPedometerDemo */,
+				75AA614E1F54F2210017929E /* CMPedometerDemoTests */,
+				75AA61591F54F2210017929E /* CMPedometerDemoUITests */,
+				75AA61331F54F2200017929E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75AA61331F54F2200017929E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75AA61321F54F2200017929E /* CMPedometerDemo.app */,
+				75AA614B1F54F2210017929E /* CMPedometerDemoTests.xctest */,
+				75AA61561F54F2210017929E /* CMPedometerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75AA61341F54F2200017929E /* CMPedometerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				75AA61381F54F2200017929E /* AppDelegate.h */,
+				75AA61391F54F2200017929E /* AppDelegate.m */,
+				75AA613B1F54F2200017929E /* ViewController.h */,
+				75AA613C1F54F2200017929E /* ViewController.m */,
+				75AA613E1F54F2200017929E /* Main.storyboard */,
+				75AA61411F54F2200017929E /* Assets.xcassets */,
+				75AA61431F54F2200017929E /* LaunchScreen.storyboard */,
+				75AA61461F54F2200017929E /* Info.plist */,
+				75AA61351F54F2200017929E /* Supporting Files */,
+			);
+			path = CMPedometerDemo;
+			sourceTree = "<group>";
+		};
+		75AA61351F54F2200017929E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75AA61361F54F2200017929E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75AA614E1F54F2210017929E /* CMPedometerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				75AA614F1F54F2210017929E /* CMPedometerDemoTests.m */,
+				75AA61511F54F2210017929E /* Info.plist */,
+			);
+			path = CMPedometerDemoTests;
+			sourceTree = "<group>";
+		};
+		75AA61591F54F2210017929E /* CMPedometerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75AA615A1F54F2210017929E /* CMPedometerDemoUITests.m */,
+				75AA615C1F54F2210017929E /* Info.plist */,
+			);
+			path = CMPedometerDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75AA61311F54F2200017929E /* CMPedometerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75AA615F1F54F2210017929E /* Build configuration list for PBXNativeTarget "CMPedometerDemo" */;
+			buildPhases = (
+				75AA612E1F54F2200017929E /* Sources */,
+				75AA612F1F54F2200017929E /* Frameworks */,
+				75AA61301F54F2200017929E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CMPedometerDemo;
+			productName = CMPedometerDemo;
+			productReference = 75AA61321F54F2200017929E /* CMPedometerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75AA614A1F54F2210017929E /* CMPedometerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75AA61621F54F2210017929E /* Build configuration list for PBXNativeTarget "CMPedometerDemoTests" */;
+			buildPhases = (
+				75AA61471F54F2210017929E /* Sources */,
+				75AA61481F54F2210017929E /* Frameworks */,
+				75AA61491F54F2210017929E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75AA614D1F54F2210017929E /* PBXTargetDependency */,
+			);
+			name = CMPedometerDemoTests;
+			productName = CMPedometerDemoTests;
+			productReference = 75AA614B1F54F2210017929E /* CMPedometerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75AA61551F54F2210017929E /* CMPedometerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75AA61651F54F2210017929E /* Build configuration list for PBXNativeTarget "CMPedometerDemoUITests" */;
+			buildPhases = (
+				75AA61521F54F2210017929E /* Sources */,
+				75AA61531F54F2210017929E /* Frameworks */,
+				75AA61541F54F2210017929E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75AA61581F54F2210017929E /* PBXTargetDependency */,
+			);
+			name = CMPedometerDemoUITests;
+			productName = CMPedometerDemoUITests;
+			productReference = 75AA61561F54F2210017929E /* CMPedometerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75AA612A1F54F2200017929E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = SomeOne;
+				TargetAttributes = {
+					75AA61311F54F2200017929E = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = T8RTZ4HGC6;
+						ProvisioningStyle = Automatic;
+					};
+					75AA614A1F54F2210017929E = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 75AA61311F54F2200017929E;
+					};
+					75AA61551F54F2210017929E = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 75AA61311F54F2200017929E;
+					};
+				};
+			};
+			buildConfigurationList = 75AA612D1F54F2200017929E /* Build configuration list for PBXProject "CMPedometerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75AA61291F54F2200017929E;
+			productRefGroup = 75AA61331F54F2200017929E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75AA61311F54F2200017929E /* CMPedometerDemo */,
+				75AA614A1F54F2210017929E /* CMPedometerDemoTests */,
+				75AA61551F54F2210017929E /* CMPedometerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75AA61301F54F2200017929E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AA61451F54F2200017929E /* LaunchScreen.storyboard in Resources */,
+				75AA61421F54F2200017929E /* Assets.xcassets in Resources */,
+				75AA61401F54F2200017929E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75AA61491F54F2210017929E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75AA61541F54F2210017929E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75AA612E1F54F2200017929E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AA613D1F54F2200017929E /* ViewController.m in Sources */,
+				75AA613A1F54F2200017929E /* AppDelegate.m in Sources */,
+				75AA61371F54F2200017929E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75AA61471F54F2210017929E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AA61501F54F2210017929E /* CMPedometerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75AA61521F54F2210017929E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AA615B1F54F2210017929E /* CMPedometerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75AA614D1F54F2210017929E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75AA61311F54F2200017929E /* CMPedometerDemo */;
+			targetProxy = 75AA614C1F54F2210017929E /* PBXContainerItemProxy */;
+		};
+		75AA61581F54F2210017929E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75AA61311F54F2200017929E /* CMPedometerDemo */;
+			targetProxy = 75AA61571F54F2210017929E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75AA613E1F54F2200017929E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75AA613F1F54F2200017929E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75AA61431F54F2200017929E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75AA61441F54F2200017929E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75AA615D1F54F2210017929E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75AA615E1F54F2210017929E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75AA61601F54F2210017929E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T8RTZ4HGC6;
+				INFOPLIST_FILE = CMPedometerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rannie.CMPedometerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		75AA61611F54F2210017929E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T8RTZ4HGC6;
+				INFOPLIST_FILE = CMPedometerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rannie.CMPedometerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		75AA61631F54F2210017929E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CMPedometerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rannie.CMPedometerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMPedometerDemo.app/CMPedometerDemo";
+			};
+			name = Debug;
+		};
+		75AA61641F54F2210017929E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CMPedometerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rannie.CMPedometerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMPedometerDemo.app/CMPedometerDemo";
+			};
+			name = Release;
+		};
+		75AA61661F54F2210017929E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CMPedometerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rannie.CMPedometerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CMPedometerDemo;
+			};
+			name = Debug;
+		};
+		75AA61671F54F2210017929E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CMPedometerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Rannie.CMPedometerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CMPedometerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75AA612D1F54F2200017929E /* Build configuration list for PBXProject "CMPedometerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75AA615D1F54F2210017929E /* Debug */,
+				75AA615E1F54F2210017929E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75AA615F1F54F2210017929E /* Build configuration list for PBXNativeTarget "CMPedometerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75AA61601F54F2210017929E /* Debug */,
+				75AA61611F54F2210017929E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		75AA61621F54F2210017929E /* Build configuration list for PBXNativeTarget "CMPedometerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75AA61631F54F2210017929E /* Debug */,
+				75AA61641F54F2210017929E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		75AA61651F54F2210017929E /* Build configuration list for PBXNativeTarget "CMPedometerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75AA61661F54F2210017929E /* Debug */,
+				75AA61671F54F2210017929E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75AA612A1F54F2200017929E /* Project object */;
+}
