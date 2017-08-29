@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,17 +22,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPH-2a-ATH">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPH-2a-ATH">
+                                <rect key="frame" x="36" y="323" width="303" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26U-oB-KRs">
+                                <rect key="frame" x="156.5" y="199" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="XHa-0T-eIA"/>
+                                    <constraint firstAttribute="height" constant="30" id="sUP-bc-nB7"/>
+                                </constraints>
+                                <state key="normal" title="停止计步"/>
+                                <connections>
+                                    <action selector="stopCountStep:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z9J-yX-Qbq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKa-at-l2F">
+                                <rect key="frame" x="160" y="97" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ESh-4a-z2h"/>
+                                    <constraint firstAttribute="width" constant="55" id="xSW-dO-weW"/>
+                                </constraints>
+                                <state key="normal" title="最近7天"/>
+                                <connections>
+                                    <action selector="lastWeek:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lyX-2F-gg2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHb-yO-McB">
+                                <rect key="frame" x="156" y="148" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="77E-dU-PnZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="clS-xa-Ig8"/>
+                                </constraints>
+                                <state key="normal" title="开始计步"/>
+                                <connections>
+                                    <action selector="startCountStep:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tcZ-pi-N9x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HPH-2a-ATH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1XS-mi-96Q"/>
+                            <constraint firstItem="wKa-at-l2F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4eX-DO-JNq"/>
+                            <constraint firstItem="26U-oB-KRs" firstAttribute="top" secondItem="fHb-yO-McB" secondAttribute="bottom" constant="21" id="5x9-3G-uNe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HPH-2a-ATH" secondAttribute="trailing" constant="20" id="8nI-m9-aPD"/>
                             <constraint firstItem="HPH-2a-ATH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9d0-Y2-G4f"/>
+                            <constraint firstItem="fHb-yO-McB" firstAttribute="top" secondItem="wKa-at-l2F" secondAttribute="bottom" constant="21" id="Wwl-TL-z7U"/>
+                            <constraint firstItem="fHb-yO-McB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YPN-bL-ERn"/>
+                            <constraint firstItem="26U-oB-KRs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cB0-1Q-9Bt"/>
+                            <constraint firstItem="HPH-2a-ATH" firstAttribute="top" secondItem="26U-oB-KRs" secondAttribute="bottom" constant="94" id="dE9-Kl-a5u"/>
+                            <constraint firstItem="HPH-2a-ATH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="rTF-5Z-AOj"/>
                         </constraints>
                     </view>
                     <connections>
