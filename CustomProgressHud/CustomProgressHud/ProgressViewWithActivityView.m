@@ -50,6 +50,7 @@
 //确定大小和位置
 - (void)layoutSubviews
 {
+    [super layoutSubviews];
     self.bgView.frame = CGRectMake(0, 0, 64, 64);
     self.bgView.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
     self.activityView.center = CGPointMake(self.bgView.frame.size.width/2, self.bgView.frame.size.height/2);
