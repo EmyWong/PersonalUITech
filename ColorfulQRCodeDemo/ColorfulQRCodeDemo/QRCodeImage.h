@@ -18,7 +18,7 @@
  *
  *  @return <#return value description#>
  */
-+ (QRCodeImage *_Nonnull)codeImageWithString:(NSString *_Nullable)string
++ (QRCodeImage *)codeImageWithString:(NSString *_Nullable)string
                                         size:(CGFloat)width;
 
 /**
@@ -30,7 +30,7 @@
  *
  *  @return <#return value description#>
  */
-+ (QRCodeImage *_Nonnull)codeImageWithString:(NSString *_Nullable)string
++ (QRCodeImage *)codeImageWithString:(NSString *_Nullable)string
                                         size:(CGFloat)width
                                        color:(UIColor *_Nullable)color;
 /**
@@ -44,7 +44,7 @@
  *
  *  @return <#return value description#>
  */
-+ (QRCodeImage *_Nonnull)codeImageWithString:(NSString *_Nullable)string
++ (QRCodeImage *)codeImageWithString:(NSString *_Nullable)string
                                         size:(CGFloat)width
                                        color:(UIColor *_Nullable)color
                                         icon:(UIImage *_Nullable)icon

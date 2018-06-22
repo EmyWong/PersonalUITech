@@ -51,7 +51,10 @@
     // 3.清理
     CGContextRelease(bitmapRef);
     CGImageRelease(bitmapImage);
-    return (QRCodeImage*)[UIImage imageWithCGImage:scaledImage];
+    CGColorSpaceRelease(cs);
+    QRCodeImage *codeImage = (QRCodeImage *)[UIImage imageWithCGImage:scaledImage];
+    if (scaledImage) CGImageRelease(scaledImage);
+    return codeImage;
 }
 
 + (CIImage *)createQRForString:(NSString *)qrString {
