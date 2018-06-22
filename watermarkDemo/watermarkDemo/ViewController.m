@@ -45,7 +45,7 @@
     int h = img.size.height;
     
     //铺一张空白画布 原图size
-    UIGraphicsBeginImageContext(img.size);
+    UIGraphicsBeginImageContextWithOptions(img.size, NO, img.scale);
     
     //将原图画在画布上
     [img drawInRect:CGRectMake(0,0 , w, h)];
