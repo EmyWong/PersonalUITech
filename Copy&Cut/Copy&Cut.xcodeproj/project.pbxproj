@@ -13,12 +13,12 @@
 		95DCDAFB1C0A9F1A0042F0FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DCDAF91C0A9F1A0042F0FA /* Main.storyboard */; };
 		95DCDAFD1C0A9F1A0042F0FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DCDAFC1C0A9F1A0042F0FA /* Assets.xcassets */; };
 		95DCDB001C0A9F1A0042F0FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DCDAFE1C0A9F1A0042F0FA /* LaunchScreen.storyboard */; };
-		95DCDB091C0A9F5C0042F0FA /* UICopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DCDB081C0A9F5C0042F0FA /* UICopyLabel.m */; settings = {ASSET_TAGS = (); }; };
-		95DCDB0C1C0AA44C0042F0FA /* UICopyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DCDB0B1C0AA44C0042F0FA /* UICopyImageView.m */; settings = {ASSET_TAGS = (); }; };
-		95DCDB0F1C0B16470042F0FA /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DCDB0D1C0B16470042F0FA /* 1.png */; settings = {ASSET_TAGS = (); }; };
-		95DCDB101C0B16470042F0FA /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DCDB0E1C0B16470042F0FA /* 3.png */; settings = {ASSET_TAGS = (); }; };
-		95DCDB131C0B18CF0042F0FA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DCDB121C0B18CF0042F0FA /* SecondViewController.m */; settings = {ASSET_TAGS = (); }; };
-		95DCDB161C0B1EF60042F0FA /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DCDB151C0B1EF60042F0FA /* ThirdViewController.m */; settings = {ASSET_TAGS = (); }; };
+		95DCDB091C0A9F5C0042F0FA /* EWCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DCDB081C0A9F5C0042F0FA /* EWCopyLabel.m */; };
+		95DCDB0C1C0AA44C0042F0FA /* EWCopyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DCDB0B1C0AA44C0042F0FA /* EWCopyImageView.m */; };
+		95DCDB0F1C0B16470042F0FA /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DCDB0D1C0B16470042F0FA /* 1.png */; };
+		95DCDB101C0B16470042F0FA /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DCDB0E1C0B16470042F0FA /* 3.png */; };
+		95DCDB131C0B18CF0042F0FA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DCDB121C0B18CF0042F0FA /* SecondViewController.m */; };
+		95DCDB161C0B1EF60042F0FA /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DCDB151C0B1EF60042F0FA /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +32,10 @@
 		95DCDAFC1C0A9F1A0042F0FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95DCDAFF1C0A9F1A0042F0FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95DCDB011C0A9F1A0042F0FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95DCDB071C0A9F5C0042F0FA /* UICopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICopyLabel.h; sourceTree = "<group>"; };
-		95DCDB081C0A9F5C0042F0FA /* UICopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICopyLabel.m; sourceTree = "<group>"; };
-		95DCDB0A1C0AA44C0042F0FA /* UICopyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICopyImageView.h; sourceTree = "<group>"; };
-		95DCDB0B1C0AA44C0042F0FA /* UICopyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICopyImageView.m; sourceTree = "<group>"; };
+		95DCDB071C0A9F5C0042F0FA /* EWCopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWCopyLabel.h; sourceTree = "<group>"; };
+		95DCDB081C0A9F5C0042F0FA /* EWCopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWCopyLabel.m; sourceTree = "<group>"; };
+		95DCDB0A1C0AA44C0042F0FA /* EWCopyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWCopyImageView.h; sourceTree = "<group>"; };
+		95DCDB0B1C0AA44C0042F0FA /* EWCopyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWCopyImageView.m; sourceTree = "<group>"; };
 		95DCDB0D1C0B16470042F0FA /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		95DCDB0E1C0B16470042F0FA /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		95DCDB111C0B18CF0042F0FA /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -82,10 +82,10 @@
 				95DCDB121C0B18CF0042F0FA /* SecondViewController.m */,
 				95DCDB141C0B1EF60042F0FA /* ThirdViewController.h */,
 				95DCDB151C0B1EF60042F0FA /* ThirdViewController.m */,
-				95DCDB071C0A9F5C0042F0FA /* UICopyLabel.h */,
-				95DCDB081C0A9F5C0042F0FA /* UICopyLabel.m */,
-				95DCDB0A1C0AA44C0042F0FA /* UICopyImageView.h */,
-				95DCDB0B1C0AA44C0042F0FA /* UICopyImageView.m */,
+				95DCDB071C0A9F5C0042F0FA /* EWCopyLabel.h */,
+				95DCDB081C0A9F5C0042F0FA /* EWCopyLabel.m */,
+				95DCDB0A1C0AA44C0042F0FA /* EWCopyImageView.h */,
+				95DCDB0B1C0AA44C0042F0FA /* EWCopyImageView.m */,
 				95DCDB0D1C0B16470042F0FA /* 1.png */,
 				95DCDB0E1C0B16470042F0FA /* 3.png */,
 				95DCDAF91C0A9F1A0042F0FA /* Main.storyboard */,
@@ -179,9 +179,9 @@
 			files = (
 				95DCDB131C0B18CF0042F0FA /* SecondViewController.m in Sources */,
 				95DCDAF81C0A9F1A0042F0FA /* ViewController.m in Sources */,
-				95DCDB091C0A9F5C0042F0FA /* UICopyLabel.m in Sources */,
+				95DCDB091C0A9F5C0042F0FA /* EWCopyLabel.m in Sources */,
 				95DCDAF51C0A9F1A0042F0FA /* AppDelegate.m in Sources */,
-				95DCDB0C1C0AA44C0042F0FA /* UICopyImageView.m in Sources */,
+				95DCDB0C1C0AA44C0042F0FA /* EWCopyImageView.m in Sources */,
 				95DCDAF21C0A9F1A0042F0FA /* main.m in Sources */,
 				95DCDB161C0B1EF60042F0FA /* ThirdViewController.m in Sources */,
 			);
@@ -332,6 +332,7 @@
 				95DCDB061C0A9F1A0042F0FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

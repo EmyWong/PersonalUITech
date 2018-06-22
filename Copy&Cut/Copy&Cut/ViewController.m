@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UICopyLabel.h"
+#import "EWCopyLabel.h"
 #import "SecondViewController.h"
 @interface ViewController ()
 
@@ -17,12 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UICopyLabel *label = [[UICopyLabel alloc]initWithFrame:CGRectMake(10, 100, self.view.frame.size.width - 20, 30)];
+    EWCopyLabel *label = [[EWCopyLabel alloc]initWithFrame:CGRectMake(10, 100, self.view.frame.size.width - 20, 30)];
     label.text = @"我爱你";
     label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];
     
-    UICopyLabel *label1 = [[UICopyLabel alloc]initWithFrame:CGRectMake(10, 70, self.view.frame.size.width - 20, 30)];
+    EWCopyLabel *label1 = [[EWCopyLabel alloc]initWithFrame:CGRectMake(10, 70, self.view.frame.size.width - 20, 30)];
     label1.text = @"哈哈哈";
     label1.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label1];

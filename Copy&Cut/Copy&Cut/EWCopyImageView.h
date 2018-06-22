@@ -1,5 +1,5 @@
 //
-//  UICopyLabel.h
+//  EWCopyImageView.h
 //  Copy&Cut
 //
 //  Created by 王颜华 on 15/11/29.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UICopyLabel : UILabel
+@interface EWCopyImageView : UIImageView
 
 @end
