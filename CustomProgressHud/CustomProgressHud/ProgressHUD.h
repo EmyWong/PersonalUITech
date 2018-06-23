@@ -10,11 +10,11 @@
 #import "ProgressViewWithActivityView.h"
 @interface ProgressHUD : NSObject
 
-@property ProgressViewWithActivityView *activityView;
-@property UIView * superView;
-@property UIColor *tintColor;
-@property UIColor *bgColor;
-@property BOOL isShowing;
+@property (nonatomic, strong) ProgressViewWithActivityView *activityView;
+@property (nonatomic, strong) UIView * superView;
+@property (nonatomic, strong) UIColor *tintColor;
+@property (nonatomic, strong) UIColor *bgColor;
+@property (nonatomic, assign) BOOL isShowing;
 
 - (ProgressHUD *)inView:(UIView *)inView;
 - (ProgressHUD *)tintColor:(UIColor *)color;

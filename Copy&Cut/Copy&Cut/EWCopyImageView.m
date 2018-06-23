@@ -1,33 +1,48 @@
 //
-//  UICopyLabel.m
+//  EWCopyImageView.m
 //  Copy&Cut
 //
 //  Created by 王颜华 on 15/11/29.
 //  Copyright © 2015年 EmyWong. All rights reserved.
 //
 
-#import "UICopyLabel.h"
+#import "EWCopyImageView.h"
 
-@implementation UICopyLabel
+@implementation EWCopyImageView
 
-//为了能接收到事件（能成为第一响应者）
 - (BOOL)canBecomeFirstResponder
 {
     return YES;
 }
-//针对复制的操作覆盖两个方法
+
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender
 {
-    return (action == @selector(copy:));
-}
-- (void)copy:(id)sender
-{
-    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    pasteboard.string = self.text;
-    NSLog(@"%@",pasteboard.string);
+    return (action == @selector(copy:) || action == @selector(paste:));
 }
 
-//UILabel是默认不接收事件的，我们需要自己添加touch事件
+- (void)copy:(id)sender
+{
+//    系统用的粘贴板
+    UIPasteboard *pboard = [UIPasteboard generalPasteboard];
+//    自己用的时候，需要自己创建
+//    需要提供一个唯一的名字，一般使用倒写的域名：com.mycompany.myapp.pboard
+//    后面的参数表示，如果不存在，是否创建一个
+//    UIPasteboard *pasteboard = [UIPasteboard pasteboardWithName:@"wangyanhua" create:YES];
+    
+    NSData *imgData = UIImagePNGRepresentation(self.image);
+    pboard.image = [UIImage imageWithData:imgData];
+     NSLog(@"%@",self.image);
+    NSLog(@"%@",pboard.image);
+
+}
+- (void)paste:(id)sender
+{
+    UIPasteboard *pboard = [UIPasteboard generalPasteboard];
+    self.image = pboard.image;
+    NSLog(@"%@",pboard.image);
+}
+
+//UIImageView是默认不接收事件的，我们需要自己添加touch事件
 - (void)attachTapHanlder
 {
     //开启用户交互
@@ -41,7 +56,8 @@
 {
     [self becomeFirstResponder];
     //UIMenuItem *menu = [[UIMenuItem alloc]initWithTitle:@"复制" action:@selector(copy:)];
-    //[[UIMenuController sharedMenuController] setMenuItems:[NSArray arrayWithObjects:menu, nil]];
+    //UIMenuItem *menu2 = [[UIMenuItem alloc]initWithTitle:@"粘贴" action:@selector(paste:)];
+    //[[UIMenuController sharedMenuController] setMenuItems:[NSArray arrayWithObjects:menu,menu2, nil]];
     [[UIMenuController sharedMenuController] setTargetRect:self.frame inView:self.superview];
     [[UIMenuController sharedMenuController] setMenuVisible:YES animated:YES];
 }
@@ -59,5 +75,6 @@
     [super awakeFromNib];
     [self attachTapHanlder];
 }
+
 
 @end

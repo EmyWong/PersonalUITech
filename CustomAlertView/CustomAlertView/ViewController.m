@@ -74,11 +74,13 @@
 {
     NSLog(@"确定");
     self.window.hidden = YES;
+    [self.window resignKeyWindow];
 }
 - (void)qvxiao
 {
     NSLog(@"取消");
     self.window.hidden = YES;
+    [self.window resignKeyWindow];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

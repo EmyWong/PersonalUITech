@@ -10,7 +10,7 @@
 
 @interface ProgressViewWithActivityView : UIView
 
-@property UIActivityIndicatorView *activityView;
-@property UIView *bgView;
+@property (nonatomic, strong) UIActivityIndicatorView *activityView;
+@property (nonatomic, strong) UIView *bgView;
 
 @end

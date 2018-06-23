@@ -7,7 +7,7 @@
 //
 
 #import "SecondViewController.h"
-#import "UICopyImageView.h"
+#import "EWCopyImageView.h"
 #import "ThirdViewController.h"
 @interface SecondViewController ()
 
@@ -19,10 +19,10 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UICopyImageView *copyImg1 = [[UICopyImageView alloc]initWithFrame:CGRectMake(10, 150, 150, 150)];
+    EWCopyImageView *copyImg1 = [[EWCopyImageView alloc]initWithFrame:CGRectMake(10, 150, 150, 150)];
     copyImg1.image = [UIImage imageNamed:@"1"];
     [self.view addSubview:copyImg1];
-    UICopyImageView *copyImg2 = [[UICopyImageView alloc]initWithFrame:CGRectMake(170, 150, 150, 150)];
+    EWCopyImageView *copyImg2 = [[EWCopyImageView alloc]initWithFrame:CGRectMake(170, 150, 150, 150)];
     copyImg2.image = [UIImage imageNamed:@"3"];
     [self.view addSubview:copyImg2];
 
