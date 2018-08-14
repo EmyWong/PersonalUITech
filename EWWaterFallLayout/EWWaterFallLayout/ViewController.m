@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import "EWWaterFallLayout.h"
 
+//随机色
+#define random(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define randomColor random(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
 @interface ViewController ()<UICollectionViewDataSource,EWWaterFallLayoutDataSource>
 
 @property (nonatomic,retain) UICollectionView *collectionView;
@@ -52,7 +56,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor greenColor];
+    cell.backgroundColor = randomColor;
     return cell;
 }
 
