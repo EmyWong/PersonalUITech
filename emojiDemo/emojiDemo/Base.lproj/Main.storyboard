@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwe-G3-uak">
+                                <rect key="frame" x="0.0" y="61" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6M3-2q-tAt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CQT-cN-Ahs">
+                                <rect key="frame" x="50" y="322.5" width="275" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9a-LM-47R">
+                                <rect key="frame" x="0.0" y="132" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qlG-h8-J11"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="emoji:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqd-uc-hf4">
+                                <rect key="frame" x="0.0" y="40" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="emoji编码:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqC-C2-o0I">
+                                <rect key="frame" x="0.0" y="111" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="emoji解码:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5S-8c-oTW">
+                                <rect key="frame" x="0.0" y="182" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdu-Jg-VCs">
+                                <rect key="frame" x="0.0" y="203" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hdV-kE-DZZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="M5S-8c-oTW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Dz-cb-ggD"/>
+                            <constraint firstItem="bdu-Jg-VCs" firstAttribute="top" secondItem="M5S-8c-oTW" secondAttribute="bottom" id="57Q-US-CZY"/>
+                            <constraint firstItem="zqd-uc-hf4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8qy-vK-GYf"/>
+                            <constraint firstItem="bdu-Jg-VCs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ESc-0I-dhw"/>
+                            <constraint firstItem="zqd-uc-hf4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="I6p-US-1zA"/>
+                            <constraint firstItem="EqC-C2-o0I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="J8Y-po-fxY"/>
+                            <constraint firstItem="V9a-LM-47R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KZN-fl-jdU"/>
+                            <constraint firstItem="M5S-8c-oTW" firstAttribute="top" secondItem="V9a-LM-47R" secondAttribute="bottom" id="LvZ-jq-fGJ"/>
+                            <constraint firstItem="EqC-C2-o0I" firstAttribute="top" secondItem="lwe-G3-uak" secondAttribute="bottom" id="RL4-jz-1y7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CQT-cN-Ahs" secondAttribute="trailing" constant="50" id="SFX-Ur-YfU"/>
+                            <constraint firstItem="lwe-G3-uak" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T6h-Gh-plQ"/>
+                            <constraint firstItem="V9a-LM-47R" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XI6-9p-SvL"/>
+                            <constraint firstItem="CQT-cN-Ahs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="YEu-ZF-7dh"/>
+                            <constraint firstItem="lwe-G3-uak" firstAttribute="top" secondItem="zqd-uc-hf4" secondAttribute="bottom" id="j06-yM-8xZ"/>
+                            <constraint firstItem="CQT-cN-Ahs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qOc-6W-wFf"/>
+                            <constraint firstAttribute="trailing" secondItem="lwe-G3-uak" secondAttribute="trailing" id="svD-Dc-R1E"/>
+                            <constraint firstItem="V9a-LM-47R" firstAttribute="top" secondItem="EqC-C2-o0I" secondAttribute="bottom" id="vnf-Hi-twg"/>
+                            <constraint firstItem="bdu-Jg-VCs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xuO-6O-fJr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="TextField" destination="CQT-cN-Ahs" id="j6B-fJ-Rwl"/>
+                        <outlet property="emojiDecodeLabel" destination="bdu-Jg-VCs" id="lZF-Uc-w1l"/>
+                        <outlet property="emojiEncodeLabel" destination="V9a-LM-47R" id="deV-YE-HTw"/>
+                        <outlet property="textLabel" destination="lwe-G3-uak" id="Hxf-7c-I97"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
