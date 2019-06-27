@@ -10,10 +10,13 @@
 
 @interface ViewController () {
     CAShapeLayer *aniShapeLayer;
+    CAShapeLayer *cusShapeLayer;
+    CAShapeLayer *cus2ShapeLayer;
 }
 
 @property (weak, nonatomic) IBOutlet UIView *loadingView;
 @property (weak, nonatomic) IBOutlet UIView *animationView;
+@property (weak, nonatomic) IBOutlet UIView *customView;
 
 @end
 
@@ -54,6 +57,33 @@
     aniShapeLayer.lineCap = kCALineCapRound;
     [_animationView.layer addSublayer:aniShapeLayer];
  
+    cusShapeLayer = [CAShapeLayer layer];
+    cusShapeLayer.strokeColor = [UIColor whiteColor].CGColor;
+    cusShapeLayer.fillColor = [UIColor clearColor].CGColor;
+    cusShapeLayer.lineWidth = 7;
+    CGFloat cusRadius = _customView.frame.size.width / 2. * 0.8;
+    UIBezierPath *ovalPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(_customView.frame.size.width / 2,_customView.frame.size.height / 2) radius:cusRadius startAngle:M_PI * 3 / 2 endAngle:M_PI * 7 / 2 clockwise:YES];
+    CGPathRef cusPath = ovalPath.CGPath;
+    cusShapeLayer.path = cusPath;
+    cusShapeLayer.lineCap = kCALineCapRound;
+    [_customView.layer addSublayer:cusShapeLayer];
+    
+    
+    cus2ShapeLayer = [CAShapeLayer layer];
+    cus2ShapeLayer.strokeColor = [UIColor whiteColor].CGColor;
+    cus2ShapeLayer.fillColor = [UIColor clearColor].CGColor;
+    cus2ShapeLayer.lineWidth = 7;
+    UIBezierPath *customePath = [UIBezierPath bezierPath];
+    CGFloat width = _customView.frame.size.width / 6.;
+    [customePath moveToPoint:CGPointMake(_customView.frame.size.width/2 + width, _customView.frame.size.height / 2.0)];
+    [customePath addLineToPoint:CGPointMake(_customView.frame.size.width/2 - width / 2.0, _customView.frame.size.height / 2. + width)];
+    [customePath addLineToPoint:CGPointMake(_customView.frame.size.width/2 - width / 2.0, _customView.frame.size.height / 2. - width)];
+    [customePath closePath];
+    cus2ShapeLayer.path = customePath.CGPath;
+    cus2ShapeLayer.lineCap = kCALineCapRound;
+    [_customView.layer addSublayer:cus2ShapeLayer];
+    
+
 }
 
 - (void)beginSimpleAnimation {
@@ -102,10 +132,54 @@
     [aniShapeLayer addAnimation:group forKey:nil];
 }
 
+- (void)beginCustomAnimation {
+    {
+        //笔画开始动画
+        CABasicAnimation *strokeStartAnimate = [CABasicAnimation animationWithKeyPath:@"strokeStart"];
+        strokeStartAnimate.fromValue = @(0);
+        strokeStartAnimate.toValue = @(0);
+        
+        //笔画结束动画
+        CABasicAnimation *strokeEndAnimate = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+        //0代表绘制路径的起始位置
+        strokeEndAnimate.fromValue = @(0);
+        //1代表绘制路径的终止位置
+        strokeEndAnimate.toValue = @(1);
+        
+        CAAnimationGroup *group = [[CAAnimationGroup alloc] init];
+        group.duration = 1.5;
+        group.repeatCount = HUGE;
+        group.animations = @[strokeStartAnimate,strokeEndAnimate];
+        //用_animationView.layer 添加动画 不可行 需要加在layer上
+        [cusShapeLayer addAnimation:group forKey:nil];
+    }
+    
+    {
+        //笔画开始动画
+        CABasicAnimation *strokeStartAnimate = [CABasicAnimation animationWithKeyPath:@"strokeStart"];
+        strokeStartAnimate.fromValue = @(0);
+        strokeStartAnimate.toValue = @(0);
+        
+        //笔画结束动画
+        CABasicAnimation *strokeEndAnimate = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+        //0代表绘制路径的起始位置
+        strokeEndAnimate.fromValue = @(0);
+        //1代表绘制路径的终止位置
+        strokeEndAnimate.toValue = @(1);
+        
+        CAAnimationGroup *group = [[CAAnimationGroup alloc] init];
+        group.duration = 1.5;
+        group.repeatCount = HUGE;
+        group.animations = @[strokeStartAnimate,strokeEndAnimate];
+        [cus2ShapeLayer addAnimation:group forKey:nil];
+    }
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self beginSimpleAnimation];
     [self beginComplexAnimation];
+    [self beginCustomAnimation];
 }
 
 @end
