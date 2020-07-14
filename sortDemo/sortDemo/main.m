@@ -61,7 +61,8 @@ int calOneHundrend() {
 
 
 //输出数组
-void printArray(int array[], int count) {
+void printArray(char *type,int array[], int count) {
+    printf("%s:",type);
     for (int n = 0; n < count; n++) {
                   printf("%d ",array[n]);
               }
@@ -80,14 +81,14 @@ void printArray(int array[], int count) {
 void BubbleSort(int array[], int count) {
        for (int i = 0; i < count - 1; i++) {
            for (int j = 0; j < count - 1 - i; j++) {
-               if (array[j] < array[j+1]) {
+               if (array[j] > array[j+1]) {
                    int temp = array[j];
                    array[j] = array[j+1];
                    array[j+1] = temp;
                }
            }
-           printArray(array, count);
        }
+    printArray("冒泡排序",array, count);
 }
 
 //冒泡排序OC写法
@@ -98,8 +99,8 @@ void OCBubbleSort(NSMutableArray *array) {
                 [array exchangeObjectAtIndex:j + 1 withObjectAtIndex:j];
             }
         }
-        NSLog(@"%@",array);
     }
+    NSLog(@"%@",array);
 }
 
 //鸡尾酒排序
@@ -130,8 +131,8 @@ void CockTailSort (int array[], int count) {
             }
         }
         left++;
-        printArray(array, count);
     }
+    printArray("鸡尾酒排序",array, count);
 }
 
 //鸡尾酒排序OC写法
@@ -151,8 +152,8 @@ void OCCockTailSort(NSMutableArray *array) {
             }
         }
         left++;
-        NSLog(@"%@",array);
     }
+    NSLog(@"%@",array);
 }
 
 //选择排序
@@ -176,8 +177,8 @@ void SelectionSort(int array[], int count) {
             array[min] = array[i];
             array[i] = temp; // 放到已排序序列的末尾，该操作很有可能把稳定性打乱，所以选择排序是不稳定的排序算法
         }
-        printArray(array, count);
     }
+    printArray("选择排序",array, count);
 }
 
 //选择排序OC写法
@@ -213,8 +214,8 @@ void InsertionSort(int array[], int count) {
             j--; //继续向前推进
         }
         array[j + 1] = get; //直到没有比get大的牌了，就把get插入到后面一个的位置上。
-        printArray(array, count);
     }
+    printArray("插入排序",array, count);
 }
 //插入排序OC写法
 void OCInsertionSort(NSMutableArray *array) {
@@ -225,8 +226,8 @@ void OCInsertionSort(NSMutableArray *array) {
             [array exchangeObjectAtIndex:j + 1 withObjectAtIndex:j];
             j--;
         }
-        NSLog(@"%@",array);
     }
+    NSLog(@"%@",array);
 }
 
 //二分插入排序
@@ -257,7 +258,7 @@ void InsertionSortDichotomy(int array[], int count) {
         }
         array[left] = get;
     }
-    printArray(array, count);
+    printArray("二分插入排序",array, count);
 }
 
 //二分插入排序OC写法
@@ -307,7 +308,7 @@ void ShellSort(int array[], int count) {
         }
         d = (d - 1) / 3;
     }
-    printArray(array, count);
+    printArray("希尔排序",array, count);
 }
 
 //希尔排序OC写法
@@ -358,7 +359,6 @@ void Merge(int array[], int left, int mid, int right) { //合并两个数组 lef
         array[left++] = temp[k];
     }
     free(temp);
-    printArray(array, len);
 }
 
 
@@ -398,7 +398,6 @@ void Heapify(int array[], int i,int size) {
         int temp = array[i];
         array[i] = array[max];
         array[max] = temp; // 把当前结点和它的最大(直接)子节点进行交换
-        printArray(array, size);
         Heapify(array, max, size);// 递归调用，继续从当前结点向下进行堆调整
     }
 }
@@ -423,7 +422,6 @@ void HeapSort(int array[], int count) {
         array[i] = temp;// 将堆顶元素与堆的最后一个元素互换，并从堆中去掉最后一个元素
         Heapify(array, 0, heap_size);// 从新的堆顶元素开始向下进行堆调整，时间复杂度O(logn)
     }
-    printArray(array, count);
 }
 
 //快速排序
@@ -470,46 +468,49 @@ int main(int argc, char * argv[]) {
 
     int count = sizeof(numbers) / sizeof(numbers[0]);
     //冒泡排序C语言写法
-//    BubbleSort(numbers, count);
+    BubbleSort(numbers, count);
     
-    NSMutableArray *numbers2 = [@[@4,@14,@88,@22,@60,@35] mutableCopy];
+//    NSMutableArray *numbers2 = [@[@4,@14,@88,@22,@60,@35] mutableCopy];
     //冒泡排序OC写法
 //    OCBubbleSort(numbers2);
     
     //鸡尾酒排序
-//    CockTailSort(numbers, count);
+    CockTailSort(numbers, count);
     //鸡尾酒排序OC写法
 //    OCCockTailSort(numbers2);
     
     //选择排序
-//    SelectionSort(numbers, count);
+    SelectionSort(numbers, count);
     //选择排序OC写法
 //    OCSelectionSort(numbers2);
     
     //插入排序
-//    InsertionSort(numbers, count);
+    InsertionSort(numbers, count);
     //插入排序OC算法
 //    OCInsertionSort(numbers2);
     
     //二分插入排序
-//    InsertionSortDichotomy(numbers, count);
+    InsertionSortDichotomy(numbers, count);
     //二分插入排序OC写法
 //    OCInsertionSortDichotomy(numbers2);
     
     //希尔排序
-//    ShellSort(numbers, count);
+    ShellSort(numbers, count);
     //希尔排序OC写法
 //    OCShellSort(numbers2);
     
     //归并排序
-//    DivideArray(numbers, 0, count - 1);
-    
+    DivideArray(numbers, 0, count - 1);
+    printArray("归并排序",numbers, count);
+
     //堆排序
-//    HeapSort(numbers, count);
-    
+    HeapSort(numbers, count);
+    printArray("堆排序",numbers, count);
+
     //快速排序
     QuickSort(numbers, 0, 5);
-    
+    printArray("快速排序",numbers, count);
+
    return 0;
 
 }
