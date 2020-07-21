@@ -1,8 +1,8 @@
 //
-//  EnlageButtonView.h
+//  SuperView.h
 //  ResponderChainDemo
 //
-//  Created by Emy on 2020/7/20.
+//  Created by Emy on 2020/7/21.
 //  Copyright © 2020 Emy. All rights reserved.
 //
 
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface EnlageButtonView : UIView
-
-- (UIViewController *)parentController;
+@interface SuperView : UIView
 
 @end
 

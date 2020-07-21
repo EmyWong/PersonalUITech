@@ -37,5 +37,8 @@
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"传到这里来了%s",__FUNCTION__);
+}
 
 @end

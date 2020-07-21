@@ -54,4 +54,16 @@
     return CGRectContainsPoint(self.bounds, point) ? Button : nil;
 }
 
+- (UIViewController *)parentController
+{
+    UIResponder *responder = [self nextResponder];
+    while (responder) {
+        if ([responder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)responder;
+        }
+        responder = [responder nextResponder];
+    }
+    return nil;
+}
+
 @end

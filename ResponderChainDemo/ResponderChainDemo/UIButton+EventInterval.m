@@ -30,12 +30,14 @@ static char * const eventUnavailableKey = "eventUnavailableKey";
         if (class_addMethod(self, @selector(sendAction:to:forEvent:), method_getImplementation(newButtonMethod), method_getTypeEncoding(newButtonMethod))) {
             class_replaceMethod(self, @selector(hook_sendAction:to:forEvent:), method_getImplementation(oldButtonMethod), method_getTypeEncoding(oldButtonMethod));
         } else {
+            //将sendAction:to:forEvent:方法的实现换成hook_sendAction:to:forEvent:的实现
             method_exchangeImplementations(oldButtonMethod, newButtonMethod);
         }
     });
 }
 
 - (void)hook_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
+    //如果是UIButton类
     if([self isMemberOfClass:[UIButton class]]) {
          if (self.eventUnavailable == NO) {
                self.eventUnavailable = YES;

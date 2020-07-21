@@ -213,7 +213,9 @@ void InsertionSort(int array[], int count) {
             array[j + 1] = array[j];
             j--; //继续向前推进
         }
-        array[j + 1] = get; //直到没有比get大的牌了，就把get插入到后面一个的位置上。
+        if (j + 1 != i) {
+            array[j + 1] = get; //直到没有比get大的牌了，就把get插入到后面一个的位置上。
+        }
     }
     printArray("插入排序",array, count);
 }
@@ -256,7 +258,9 @@ void InsertionSortDichotomy(int array[], int count) {
         for (int j = i - 1; j >= left; j--) {
             array[j + 1] = array[j];
         }
-        array[left] = get;
+        if (left != i) {
+            array[left] = get;
+        }
     }
     printArray("二分插入排序",array, count);
 }

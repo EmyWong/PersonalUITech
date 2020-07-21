@@ -38,17 +38,17 @@
         return nil;
     }
     
-    //从后向前遍历子视图
-    for (UIView *subview in [self.subviews reverseObjectEnumerator]) {
-        //按照子视图坐标系转换点的坐标
-        CGPoint converedPoint = [self convertPoint:point toView:subview];
-        UIView *hitTestView = [subview hitTest:converedPoint withEvent:event];
-        if (hitTestView) {
-            return hitTestView;
-        }
-    }
+    //从后向前遍历子视图，之所以会采取从后往前遍历子控件的方式寻找最合适的view只是为了做一些循环优化。因为相比较之下，后添加的view在上面，降低循环次数。
+//    for (UIView *subview in [self.subviews reverseObjectEnumerator]) {
+//        //按照子视图坐标系转换点的坐标
+//        CGPoint converedPoint = [self convertPoint:point toView:subview];
+//        UIView *fitView = [subview hitTest:converedPoint withEvent:event];
+//        if (fitView) {
+//            return fitView;
+//        }
+//    }
+    
     return self;
-
 }
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
